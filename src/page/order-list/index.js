@@ -5,7 +5,7 @@ require('page/common/header/index.js');
 
 var navSide      = require('page/common/nav-side/index.js');
 var _ajax        = require('util/ajax.js');
-var _order       = require('service/user-service.js');
+var _order       = require('service/order-service.js');
 var Pagination   = require('util/pagination/index.js');
 var htmlTemplate = require('./index.string');
 

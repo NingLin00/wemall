@@ -5,7 +5,7 @@ require('page/common/header/index.js');
 
 var navSide      = require('page/common/nav-side/index.js');
 var _ajax        = require('util/ajax.js');
-var _order       = require('service/user-service.js');
+var _order       = require('service/order-service.js');
 var htmlTemplate = require('./index.string');
 
 // page 逻辑部分
@@ -21,7 +21,7 @@ var page = {
         //加载订单详情
         this.loadDetail();
         //初始化侧边导航
-        navSide.init({name: 'order-detail'});
+        navSide.init({name: 'order-list'});
 
     },
     bindEvent: function(){
