@@ -41,7 +41,7 @@ var page = {
     loadDetail: function () {
         var _this         = this,
             orderDetailHtml = '',
-            $content         = $('content');
+            $content         = $('.content');
         $content.html('<div class="loading"></div>');
         _order.getOrderDetail(this.data.orderNumber, function (res) {
             _this.dataFilter(res);

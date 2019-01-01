@@ -35,6 +35,7 @@ var config = {
         'order-confirm'         :['./src/page/order-confirm/index.js'],       //订单确认
         'order-list'            :['./src/page/order-list/index.js'],          //订单列表
         'order-detail'          :['./src/page/order-detail/index.js'],        //订单详情
+        'payment'               :['./src/page/payment/index.js'],             //支付页面
         'result'                :['./src/page/result/index.js'],              //操作结果
     },
     output:{//输出文件
@@ -144,6 +145,7 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('order-detail','订单详情')),
         new HtmlWebpackPlugin(getHtmlConfig('detail','商品详情')),
         new HtmlWebpackPlugin(getHtmlConfig('cart','购物车')),
+        new HtmlWebpackPlugin(getHtmlConfig('payment','商品支付')),
         new HtmlWebpackPlugin(getHtmlConfig('result',' 操作结果'))
     ],
     resolve:{
