@@ -27,4 +27,10 @@
 		</li>
 		
 	</ul>
+	<div class="banner-arrow prev">
+        <i class="fa fa-angle-left"></i>
+    </div>
+    <div class="banner-arrow next">
+        <i class="fa fa-angle-right"></i>
+    </div>
 </div>

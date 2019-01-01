@@ -1,0 +1,46 @@
+<div class="model close">
+	<div class="model-container">
+		<div class="model-header">
+		{{#isUpdate}}
+		<h1 class="model-title">更新地址</h1>
+		{{/isUpdate}}
+		{{^isUpdate}}
+		<h1 class="model-title">使用新地址</h1>
+		{{/isUpdate}}
+			<i class="fa fa-close close"></i>
+		</div>
+		<div class="model-body">
+			<div class="from">
+				<div class="from-line">
+					<label class="label" for="receiver-name"><span class="required">*</span>收货人:</label>
+					<input class="from-item" id="receiver-name" value="{{data.receiverName}}" placeholder="请输入收货人姓名"/>
+				</div>
+				<div class="from-line">
+					<label class="label" for="receiver-province"><span class="required">*</span>所在城市:</label>
+					<select class="from-item" id="receiver-province">
+						<option>请选择</option>
+					</select>
+					<select class="from-item" id="receiver-city">
+						<option>请选择</option>
+					</select>
+				</div>
+				<div class="from-line">
+					<label class="label" for="receiver-address"><span class="required">*</span>详细地址:</label>
+					<textarea class="from-item" id="receiver-address" value="{{data.receiverAddress}}" placeholder="请输入详细地址信息，如街道、门牌号、小区楼栋单元等信息"></textarea>
+				</div>
+				<div class="from-line">
+					<label class="label" for="receiver-phone"><span class="required">*</span>手 机:</label>
+					<input class="from-item" id="receiver-phone" value="{{data.receiverPhone}}" placeholder="请输入11位手机号码"/>
+				</div>
+				<div class="from-line">
+					<label class="label" for="receiver-zip">邮政编码:</label>
+					<input class="from-item" id="receiver-zip" value="{{data.receiverZip}}" placeholder="如:342100"/>
+				</div>
+				<div class="from-line">
+				<input type="hidden" value="{{data.id}}" id="receiver-id"/>
+					<a class="btn address-btn">保存收货地址</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

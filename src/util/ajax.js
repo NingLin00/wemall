@@ -51,7 +51,7 @@ var _ajax = {
     },
     // 错误提示
     errorTips : function(msg){
-        alert(msg || '哪里不对了~');
+        alert(msg || '未知错误，请重试...');
     },
     // 字段的验证
     validate : function(value, type){

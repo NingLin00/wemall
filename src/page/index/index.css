@@ -25,7 +25,7 @@
     color: #c60023;
 }
 
-/* banner-con */
+/* 轮播图及加载样式 */
 .banner-con{
     width: 830px;
     float: left;
@@ -39,7 +39,7 @@
     width: 100%;
     height: 370px;
 }
-/* banner的前一张和后一张按钮 */
+/* 轮播图的前一张和后一张按钮 */
 .banner-con .banner-arrow{
     position: absolute;
     top:160px;
@@ -63,7 +63,7 @@
 .banner-con .banner-arrow.next{
     right: 0;
 }
-/* floor */
+/* 分层样式 */
 .floor-wrap .floor-title{
     height: 50px;
     line-height: 50px;
@@ -72,7 +72,7 @@
     font-size: 20px;
     border-bottom: 1px solid #d58717;
 }
-/* 更改各楼层标题颜色 */
+/* 更改各层标题颜色 */
 .floor-wrap:nth-child(2) .floor-title{
     color: #3b838c;
     border-bottom: 1px solid #3b838c;
